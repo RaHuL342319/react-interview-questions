@@ -2,6 +2,11 @@ import { useEffect, useState } from "react";
 import CounterClass from "./components/class-based/CounterClass";
 import ErrorBoundary from "./components/error-boundary/ErrorBoundary";
 import MyComponent from "./components/error-boundary/MyComponent";
+import Counter2 from './components/custom-hooks/Counter'
+import FetchPost from './components/custom-hooks/FetchPost'
+import PrevValue from './components/custom-hooks/PrevValue'
+import Todo from './components/custom-hooks/Todo'
+import Debounce from "./components/custom-hooks/Debounce"
 
 export default function App() {
   const [count, setCount] = useState(0)
@@ -33,6 +38,13 @@ export default function App() {
       <ErrorBoundary>
         <MyComponent />
       </ErrorBoundary>
+      {/* Custom hooks */}
+      <Counter2 />
+      <Todo />
+      <FetchPost />
+      <PrevValue />
+      <br />
+      <Debounce />
     </div>
   );
 }
