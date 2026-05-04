@@ -7,6 +7,7 @@ import FetchPost from './components/custom-hooks/FetchPost'
 import PrevValue from './components/custom-hooks/PrevValue'
 import Todo from './components/custom-hooks/Todo'
 import Debounce from "./components/custom-hooks/Debounce"
+import ContextCounter from "./components/context-api/ContextCounter";
 
 export default function App() {
   const [count, setCount] = useState(0)
@@ -45,6 +46,12 @@ export default function App() {
       <PrevValue />
       <br />
       <Debounce />
+      <br />
+      <br />
+      <div>
+      <b>Context API Example:</b>
+      <ContextCounter/>
+      </div>
     </div>
   );
 }
