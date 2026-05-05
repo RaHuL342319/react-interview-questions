@@ -8,6 +8,7 @@ import PrevValue from './components/custom-hooks/PrevValue'
 import Todo from './components/custom-hooks/Todo'
 import Debounce from "./components/custom-hooks/Debounce"
 import ContextCounter from "./components/context-api/ContextCounter";
+import CounterReduxDemo from "./components/redux-example/CounterReduxDemo";
 
 export default function App() {
   const [count, setCount] = useState(0)
@@ -51,6 +52,10 @@ export default function App() {
       <div>
       <b>Context API Example:</b>
       <ContextCounter/>
+
+      {/* Redux Demo */}
+
+      <CounterReduxDemo />
       </div>
     </div>
   );
