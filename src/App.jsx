@@ -9,6 +9,7 @@ import Todo from './components/custom-hooks/Todo'
 import Debounce from "./components/custom-hooks/Debounce"
 import ContextCounter from "./components/context-api/ContextCounter";
 import CounterReduxDemo from "./components/redux-example/CounterReduxDemo";
+import RecoilCounterDemo from "./components/recoil-demo/RecoilCounterDemo";
 
 export default function App() {
   const [count, setCount] = useState(0)
@@ -56,6 +57,10 @@ export default function App() {
       {/* Redux Demo */}
 
       <CounterReduxDemo />
+
+      <br />
+      {/* Recoil Demo */}
+      <RecoilCounterDemo />
       </div>
     </div>
   );
